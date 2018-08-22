@@ -1,6 +1,6 @@
 {
   "name": "@mike-north/js-lib-semantic-release-config",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "main": "index.js",
   "repository": "https://github.com/mike-north/js-lib-semantic-release-config",
   "author": "Mike North <michael.l.north@gmail.com> (https://mike.works)",
@@ -12,5 +12,15 @@
     "@semantic-release/exec": "^3.0.2",
     "@semantic-release/git": "^7.0.1",
     "@semantic-release/github": "^5.0.2"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "semantic-release": "^15.9.9"
+  },
+  "plublishConfig": {
+    "access": "public",
+    "tag": "next"
   }
 }
