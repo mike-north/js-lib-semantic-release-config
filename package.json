@@ -19,7 +19,7 @@
   "devDependencies": {
     "semantic-release": "^15.9.9"
   },
-  "plublishConfig": {
+  "publishConfig": {
     "access": "public",
     "tag": "next"
   }
