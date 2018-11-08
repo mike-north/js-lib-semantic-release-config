@@ -1,5 +1,6 @@
 {
   "name": "@mike-north/js-lib-semantic-release-config",
+  "description": "Mike's shared semantic release config for JS/TS libraries",
   "version": "0.0.0-development",
   "main": "index.js",
   "repository": "https://github.com/mike-north/js-lib-semantic-release-config",
@@ -11,13 +12,14 @@
     "@semantic-release/error": "^2.2.0",
     "@semantic-release/exec": "^3.0.2",
     "@semantic-release/git": "^7.0.5",
-    "@semantic-release/github": "^5.0.2"
+    "@semantic-release/github": "^5.0.2",
+    "semantic-release": "^15.9.9",
+    "travis-deploy-once": "^5.0.9"
   },
   "scripts": {
-    "semantic-release": "semantic-release"
-  },
-  "devDependencies": {
-    "semantic-release": "^15.9.9"
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once",
+    "test": "echo 'no tests'"
   },
   "publishConfig": {
     "access": "public",
