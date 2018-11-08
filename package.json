@@ -24,5 +24,8 @@
   "publishConfig": {
     "access": "public",
     "tag": "next"
+  },
+  "devDependencies": {
+    "@mike-north/js-lib-renovate-config": "^0.0.1"
   }
 }
