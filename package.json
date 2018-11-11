@@ -23,7 +23,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "devDependencies": {
     "@mike-north/js-lib-renovate-config": "^0.0.1"
