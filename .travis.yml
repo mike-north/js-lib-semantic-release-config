@@ -5,10 +5,24 @@ cache:
 notifications:
   email: false
 node_js:
-  - '10'
   - '8'
-after_success:
-  - npm run travis-deploy-once "npm run semantic-release"
+
+stages:
+  - Travis
+  - name: 'Deploy'
+    if: branch = master AND type = push
+
+jobs:
+  include:
+    - stage: 'Test'
+      name: 'Conventional Commits'
+      script: commitlint-travis
+    - name: 'Test'
+      script: yarn test
+
+    - stage: 'Deploy'
+      script: yarn semantic-release
+
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
